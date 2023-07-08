@@ -33,7 +33,7 @@ The [skewness][skewness] for a [discrete uniform][discrete-uniform-distribution]
 <!-- <equation class="equation" label="eq:discrete_uniform_skewness" align="center" raw="\operatorname{skew}\left( X \right) = 0" alt="Skewness for a discrete uniform distribution."> -->
 
 ```math
-\operatorname{skew}\left( X \right) = 0
+\mathop{\mathrm{skew}}\left( X \right) = 0
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\operatorname{skew}\left( X \right) = 0" data-equation="eq:discrete_uniform_skewness">
@@ -194,11 +194,6 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
-## License
-
-See [LICENSE][stdlib-license].
-
-
 ## Copyright
 
 Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
@@ -241,8 +236,6 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [umd-url]: https://github.com/stdlib-js/stats-base-dists-discrete-uniform-skewness/tree/umd
 [esm-url]: https://github.com/stdlib-js/stats-base-dists-discrete-uniform-skewness/tree/esm
 [branches-url]: https://github.com/stdlib-js/stats-base-dists-discrete-uniform-skewness/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/stats-base-dists-discrete-uniform-skewness/main/LICENSE
 
 [discrete-uniform-distribution]: https://en.wikipedia.org/wiki/Discrete_uniform_distribution
 
