@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,65 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var round = require( '@stdlib/math-base-special-round' );
-var randu = require( '@stdlib/random-base-randu' );
-var isnan = require( '@stdlib/math-base-assert-is-nan' );
-var PINF = require( '@stdlib/constants-float64-pinf' );
-var NINF = require( '@stdlib/constants-float64-ninf' );
-var skewness = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof skewness, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'if provided `NaN` for any parameter, the function returns `NaN`', function test( t ) {
-	var v = skewness( NaN, 0.5 );
-	t.equal( isnan( v ), true, 'returns NaN' );
-
-	v = skewness( 10.0, NaN );
-	t.equal( isnan( v ), true, 'returns NaN' );
-
-	t.end();
-});
-
-tape( 'if provided a non-integer value for any parameter, the function returns `NaN`', function test( t ) {
-	var v = skewness( 0.1, 2 );
-	t.equal( isnan( v ), true, 'returns NaN' );
-
-	v = skewness( 10, 20.5 );
-	t.equal( isnan( v ), true, 'returns NaN' );
-
-	t.end();
-});
-
-tape( 'if provided `a > b`, the function returns `NaN`', function test( t ) {
-	var y;
-
-	y = skewness( 3.0, 2.0 );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	y = skewness( PINF, NINF );
-	t.equal( isnan( y ), true, 'returns NaN' );
-
-	t.end();
-});
-
-tape( 'the function returns `0.0` as the skewness of a discrete uniform distribution ', function test( t ) {
-	var a;
-	var b;
-	var i;
-	var v;
-
-	for ( i = 0; i < 10; i++ ) {
-		a = round( randu()*10.0 );
-		b = round( ( randu()*10.0 ) + a );
-		v = skewness( a, b );
-		t.equal( v, 0.0, 'returns 0.0' );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
