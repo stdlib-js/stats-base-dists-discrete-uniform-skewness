@@ -67,6 +67,11 @@ The [skewness][skewness] for a [discrete uniform][discrete-uniform-distribution]
 ## Usage
 
 ```javascript
+import skewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-skewness@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-base-dists-discrete-uniform-skewness/tags). For example,
+
+```javascript
 import skewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-skewness@v0.2.1-esm/index.mjs';
 ```
 
@@ -138,7 +143,7 @@ y = skewness( -1, -2 );
 <script type="module">
 
 import randint from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
-import skewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-skewness@v0.2.1-esm/index.mjs';
+import skewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-skewness@esm/index.mjs';
 
 var randa = randint.factory( 0, 10 );
 var randb = randint.factory();
