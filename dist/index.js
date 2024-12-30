@@ -1,5 +1,30 @@
-"use strict";var u=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var n=u(function(q,t){
-var s=require('@stdlib/math-base-assert-is-nan/dist'),i=require('@stdlib/math-base-assert-is-integer/dist');function a(e,r){return s(e)||s(r)||!i(e)||!i(r)||e>r?NaN:0}t.exports=a
-});var c=n();module.exports=c;
 /** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
+
+'use strict';
+
+/**
+* Discrete uniform distribution skewness.
+*
+* @module @stdlib/stats-base-dists-discrete-uniform-skewness
+*
+* @example
+* var skewness = require( '@stdlib/stats-base-dists-discrete-uniform-skewness' );
+*
+* var v = skewness( 0, 1 );
+* // returns 0.0
+*
+* v = skewness( 2, 10 );
+* // returns 0.0
+*
+* v = skewness( -10, 10 );
+* // returns 0.0
+*/
+
+// MODULES //
+
+var main = require( './main.js' );
+
+
+// EXPORTS //
+
+module.exports = main;
