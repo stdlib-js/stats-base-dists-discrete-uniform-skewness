@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-01-11)
+## Unreleased (2025-01-20)
 
 <section class="features">
 
@@ -34,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`cc32a34`](https://github.com/stdlib-js/stdlib/commit/cc32a344ed92962e2168da1f961748f934238cf8) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`69cca7b`](https://github.com/stdlib-js/stdlib/commit/69cca7b95a35f68079fb3da3c5d65c033210d347) - **feat:** add C implementation for `stats/base/dists/discrete-uniform/skewness` [(#4566)](https://github.com/stdlib-js/stdlib/pull/4566) _(by Prashant Kumar Yadav, Philipp Burckhardt)_
 
 </details>
