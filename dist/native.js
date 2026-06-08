@@ -1,7 +1,7 @@
-/*
+/**
 * @license Apache-2.0
 *
-* Copyright (c) 2019 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,19 +16,22 @@
 * limitations under the License.
 */
 
-// TypeScript Version: 4.1
+'use strict';
+
+// MODULES //
+
+var addon = require( './../src/addon.node' );
+
+
+// MAIN //
 
 /**
 * Returns the skewness of a discrete uniform distribution.
 *
-* ## Notes
-*
-* -   If `a` or `b` is not an integer value, the function returns `NaN`.
-* -   If provided `a > b`, the function returns `NaN`.
-*
-* @param a - minimum support
-* @param b - maximum support
-* @returns skewness
+* @private
+* @param {integer} a - minimum support
+* @param {integer} b - maximum support
+* @returns {number} skewness
 *
 * @example
 * var v = skewness( 0, 1 );
@@ -41,26 +44,12 @@
 * @example
 * var v = skewness( 0, 10 );
 * // returns 0.0
-*
-* @example
-* var v = skewness( 1, -0.1 );
-* // returns NaN
-*
-* @example
-* var v = skewness( -0.1, 1 );
-* // returns NaN
-*
-* @example
-* var v = skewness( 2, NaN );
-* // returns NaN
-*
-* @example
-* var v = skewness( NaN, 2 );
-* // returns NaN
 */
-declare function skewness( a: number, b: number ): number;
+function skewness( a, b ) {
+	return addon( a, b );
+}
 
 
 // EXPORTS //
 
-export = skewness;
+module.exports = skewness;
